@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Address Form</title>
+  <style>
+     ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 35px;
+        word-spacing: 15px; 
+        display: flex; 
+        align-items: center; 
+    }
+    li {
+        margin-right: 10px; 
+    }    
+    img {
+        border-radius: 70px; 
+    }
+    .image1 {
+        border: 2px solid black;
+    }
+    .aa {
+        display: flex;
+        justify-content: center; 
+    }
+    .b {
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap; 
+        gap: 20px; 
+    }
+    .search-box {
+        margin-left: auto; 
+        display: flex; 
+        align-items: center;
+    }    
+    .abc {
+        margin-left: auto; 
+    }
+    
+    .content1, .content2, .content3, .content4 {
+        border-style: solid;
+        padding: 10px; 
+        box-sizing: border-box; 
+    }
+
+    .naveen {
+        display: flex; 
+    }
+ .custom-button {
+      background-color: rgb(214, 16, 16);
+      color: rgb(6, 6, 6);
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+ }
+    input[type="button"] {
+        padding: 8px 15px;
+        background-color: #4CAF50; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: medium;
+        text-decoration: none;
+    }
+
+    input[type="button"]:hover {
+        background-color: #45a049;
+    }
+
+    select {
+        padding: 8px 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: medium;
+    }
+
+    input[type="text"], input[type="submit"] {
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+        background-color: #008CBA; 
+        color: white;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #007bb5;
+    }
+     .abc {
+      float: right;
+    }
+    .text{
+      font-size: larger; 
+       }
+  </style>
+</head>
+<body style="background-image: url(https://th.bing.com/th/id/OIP.Ac0A4i6adSKZOOEGoPIk6CAHaE8?w=175&h=104&c=7&bgcl=cb7e90&r=0&o=6&dpr=1.3&pid=13.1);background-repeat: no-repeat;background-size: 100% auto;">
+    <fieldset style="border-bottom-width: 10px;background-image: url(https://th.bing.com/th/id/OIP.32V-cB0QOxTuLU99zsC-LgHaHa?w=119&h=104&c=7&bgcl=384648&r=0&o=6&dpr=1.3&pid=13.1) ;background-repeat: no-repeat; background-color: antiquewhite;">
+        <marquee behavior="scroll" direction="left"> <h1 style="color: rgb(18, 19, 19); font-size: xx-large;">PERFUME PALACE WELCOMES YOU</h1></marquee>
+    </fieldset>
+
+    <fieldset style="background-color: aquamarine;">
+        <ul class="aa">
+            <li> <a href="F:\perfume web\perfume home page.html" style="text-decoration: none;"><input type="button" id="HOME" value="HOME"></a></li>
+             <li> <a href="contact-us.html" style="text-decoration: none;"><input type="button" id="PRODUCTS" value="PRODUCTS"></a></li>
+            <li> <a href="F:\perfume web\contact us.html" style="text-decoration: none;"><input type="button" id="CONTACT US" value="CONTACT US"></a></li>
+
+            <div class="naveen">
+                <li> <a href="F:\perfume web\add products.html" style="text-decoration: none;"><input type="button" id="ADMIN" value="ADMIN"></a></li>
+                <li> <a href="register.html" style="text-decoration: none;"><input type="button" id="REGISTER" value="REGISTER"></a></li>
+            </div>
+            
+            <div class="search-box">
+                <form action="#" method="get"> <input type="text" id="search" placeholder="Search...">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </ul>
+    </fieldset>
+<fieldset style="height: 300px; background-color: rgb(255, 255, 255);">
+  <div class="form-container">
+    <div style="text-align: center; color: rgb(243, 0, 0);"><h2>ENTER YOUR DELIVERY ADDRESS</h2></div>
+    <form>
+      <br>
+      <br>
+      <br>
+    <div class="text"   style="color: rgb(255, 0, 51); ">
+      <label for="street">STREET ADDRESS:</label>
+      <input type="text" id="street" name="street" placeholder="ADDRESS" >
+
+      <label for="city">CITY:</label>
+      <input type="text" id="city" name="city" placeholder="CITY" >
+
+      <label for="state">STATE:</label>
+      <input type="text" id="state" name="state" placeholder="STATE" >
+
+      <label for="postal">POST CODE:</label>
+      <input type="text" id="postal" name="postal" placeholder="123456" >
+
+      <label for="country">COUNTRY:</label>
+      <input type="text" id="country" name="country" placeholder="COUNTRY" >
+      </div>
+    </form>
+    </div>
+    <br> <br>  <br> <br> <br>
+    <div style="text-align: center;">
+    <button class="custom-button" onclick="windowalert()">SUBMIT</button>
+   
+<script>
+function windowalert() {
+  alert("ADDRESS SUCCESSFULLY UPDATED");
+  alert("CONTINEU PAYMENT");
+}
+</script> 
+
+      <a href="F:\perfume web\payments.html"><button class="custom-button">CONTINUE PAYMENT</button></a>
+   </div>
+  </div>
+  
+
+ </fieldset>
+  <fieldset style="background-color: black; margin-top: 1px; margin-bottom: 10px;">
+    <footer style="color: aliceblue;">
+      <div class="abc">
+        <h3>www.perfumeworld.com</h3>
+        <h4>Contact: 99009877609</h4>
+        <img src="https://th.bing.com/th?q=Instagram+Login+Black+and+White&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="" width="30px" height="30px">
+        <img src="https://th.bing.com/th?q=Facebook+Logo+Black+and+White&w=48&h=48&c=8&rs=1&qlt=90&o=6&cb=ircwebp1&dpr=1.3&pid=3.1&rm=2&mkt=en-IN&cc=IN&setlang=en&adlt=moderate" alt="" width="30px" height="30px">
+        <img src="https://th.bing.com/th?q=Telegram+Logo+Font&w=48&h=48&c=8&rs=1&qlt=90&o=6&cb=ircwebp1&dpr=1.3&pid=3.1&rm=2&mkt=en-IN&cc=IN&setlang=en&adlt=moderate" alt="" width="30px" height="30px">
+      </div>
+      <div style="text-align: justify;">
+        <img src="https://perfumepalace.in/cdn/shop/files/Perfume_Palace_logo_Final.png?v=1666518741&width=280" alt="">
+      </div>
+    </footer>
+  </fieldset>
+
+</body>
+</html>

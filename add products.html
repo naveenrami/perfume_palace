@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Product</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 6px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+         .abc {
+        margin-left: auto; 
+    }
+    
+    </style>
+</head>
+<body style="background-color: aqua; text-align: center;">
+    
+    <h1>Add a New Product</h1>
+    <div style="margin-left: 1px; margin-right: 1400px;">
+             <a href="F:\perfume web\perfume home page.html"><input type="button" id="button" value="🔙back"></a>
+</div>
+    <div style="background-color: rgb(203, 230, 221);">
+    <form action="/submit-product" method="POST" enctype="multipart/form-data">
+        <label for="productName">Product Name:</label>
+        <input type="text" id="productName" name="productName" placeholder="Enter product name" required>
+
+        <label for="productDescription">Product Description:</label>
+        <textarea id="productDescription" name="productDescription" rows="4" placeholder="Enter product description" required></textarea>
+
+        <label for="productPrice">Price (₹):</label>
+        <input type="number" id="productPrice" name="productPrice" placeholder="Enter product price" required>
+
+        <label for="productImage">Product Image:</label>
+        <input type="file" id="productImage" name="productImage" accept="image/*" required>
+
+        <button type="submit">Add Product</button>
+    </form>
+    </div>
+    
+    <fieldset style="background-color: black; margin-top: 1px; margin-bottom: 10px; margin-left: 0px; margin-right: 0px;">
+        <footer style="color: aliceblue; display: flex; align-items: center; padding: 20px;">
+            <div style="text-align: justify;">
+                <img src="https://perfumepalace.in/cdn/shop/files/Perfume_Palace_logo_Final.png?v=1666518741&width=280" alt="Perfume Palace Logo">
+            </div>
+            <div class="abc">
+                <h3>www.perfume-world.com</h3>
+                <h4>contact : 99009877609</h4>
+                <img src="https://th.bing.com/th?q=Instagram+Login+Black+and+White&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="Instagram" width="30px" height="30px">
+                <img src="https://th.bing.com/th?q=Facebook+Logo+Black+and+White&w=48&h=48&c=8&rs=1&qlt=90&o=6&cb=ircwebp1&dpr=1.3&pid=3.1&rm=2&mkt=en-IN&cc=IN&setlang=en&adlt=moderate" alt="Facebook" width="30px" height="30px">
+                <img src="https://th.bing.com/th?q=Telegram+Logo+Font&w=48&h=48&c=8&rs=1&qlt=90&o=6&cb=ircwebp1&dpr=1.3&pid=3.1&rm=2&mkt=en-IN&cc=IN&setlang=en&adlt=moderate" alt="Telegram" width="30px" height="30px">
+            </div>
+        </footer>
+    </fieldset>
+</body>
+</html>
