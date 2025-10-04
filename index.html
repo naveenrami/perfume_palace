@@ -3,31 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome</title>
+  <title>Perfume Palace - Login</title>
   <style>
     body {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: white;
+      color: rgb(15, 14, 14);
       font-family: Arial, sans-serif;
       text-align: center;
+      padding: 20px;
     }
     h1 {
-      font-size: 3em;
+      font-size: 2.5em;
+      margin-bottom: 10px;
       animation: fadeIn 2s ease-in-out;
+    }
+    form {
+      background: rgb(255, 255, 255);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      color: #333;
+      width: 100%;
+      max-width: 350px;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    button, input[type="button"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 1.1em;
+      color: white;
+      background: #4facfe;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.1s;
+    }
+    button:hover, input[type="button"]:hover {
+      background: #00c6ff;
+    }
+    p {
+      margin-top: 19px;
+      color: #000000;
+    }
+    a {
+      color: yellow;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
     }
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
+
+    /* ✅ Responsive Design */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+      form {
+        padding: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6em;
+      }
+      form {
+        padding: 15px;
+      }
+      input, button, input[type="button"] {
+        font-size: 0.9em;
+        padding: 10px;
+      }
+    }
   </style>
-  <meta http-equiv="refresh" content="3; url=F:\perfume web\perfume login page.html">
 </head>
 <body>
-  <h1>✨ Welcome to perfume palace ✨</h1>
-  <p>You will be redirected shortly...</p>
+  <h1>✨ Welcome to Perfume Palace ✨</h1>
+  <form action="login_process.html" method="post">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password">
+
+    <a href="F:\perfume web\perfume home page.html">
+      <input type="button" value="LOGIN" style="background-color: rgb(255, 71, 71);">
+    </a>
+  </form>
+
+  <p>Don’t have an account? <a href="register.html">Register here</a></p>
 </body>
 </html>
